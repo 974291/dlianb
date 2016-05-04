@@ -1,0 +1,249 @@
+*{
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+}
+#user_one{
+	border: 1px solid #eee;
+	width: 950px;
+}
+#user_one .user_img{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#user_one .user_img img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50px;
+}
+#user_one  .user_acc{
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+#user_one  .user_acc .user_name{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	display: inherit;
+	margin-bottom:10px;
+}
+
+#user_one  .user_acc .user_tel{
+	display: inherit;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #666;
+}
+#user_one  .user_acc .user_pic{
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+}
+#user_one  .user_acc .user_qq{
+	font-size: 12px;
+	color: #666;
+	
+}
+#user_one  .user_acc .user_mail{
+	font-size: 12px;
+	color: #666;
+}
+#user_one  .user_acc .user_pic img{
+	margin-left: 5px;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+#user_one .user_dd{
+	display: inline-block;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 30px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+#user_one .user_dd .a {
+	float: left;
+	line-height: 24px;
+}
+#user_one .user_dd .a a{
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+	color: #666;
+}
+#user_one .user_dd .b{
+	float: left;
+	color: #fff;
+	background-color: #2F549F;
+	font-size: 12px;
+	margin-left: 80px;
+	width: 60px;
+	height: 24px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 24px;
+}
+
+#user_one .user_dda{
+	display: inline-block;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 30px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+#user_one .user_dda .a {
+	float: left;
+	line-height: 24px;
+}
+#user_one .user_dda .a a{
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+	color: #666;
+}
+#user_one .user_dda .b{
+	float: left;
+	color: #fff;
+	background-color: #2F549F;
+	font-size: 12px;
+	margin-left: 80px;
+	width: 60px;
+	height: 24px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 24px;
+}
+
+#user_one .user_ddb{
+	display: inline-block;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 100px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+#user_one .user_ddb .a {
+	float: left;
+	line-height: 24px;
+}
+#user_one .user_ddb .a a{
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+	color: #666;
+}
+#user_one .user_ddb .b{
+	float: left;
+	color: #fff;
+	background-color: #2F549F;
+	font-size: 12px;
+	margin-left: 80px;
+	width: 60px;
+	height: 24px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 24px;
+}
+
+#user_one .user_ddc{
+	display: inline-block;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 100px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+#user_one .user_ddc .a {
+	float: left;
+	line-height: 24px;
+}
+#user_one .user_ddc .a a{
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+	color: #666;
+}
+#user_one .user_ddc .b{
+	float: left;
+	color: #fff;
+	background-color: #2F549F;
+	font-size: 12px;
+	margin-left:80px;
+	width: 60px;
+	height: 24px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 24px;
+}
+.user_right{
+	width: 469px; 
+	height: 170px;
+	border: 1px solid #eee;
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;	
+	overflow: hidden;
+
+}
+.user_right .user_title{
+	background-color: #fafafa;
+	border-bottom: 1px solid   #eee;
+	height: 30px;
+}
+.user_right .user_title span{
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 15px;
+
+}
+.user_right .user_xy{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	width:215px;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.user_right .user_xy span{
+	font-size: 12px;
+	color: #669053;
+	margin-right: 6px;
+	float: right;
+	line-height: 24px;
+}
+.user_right .user_title_list{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 140px;
+}
+.user_right .user_title_new{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.user_right .user_title_new  a{
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+}
+.user_right .user_title_new span{
+	font-size: 12px;
+	color: #666;
+	margin-right: 10px;
+	float: right;
+	margin-right: 6px;
+}
+
+
+/******************************************************************************************/
+

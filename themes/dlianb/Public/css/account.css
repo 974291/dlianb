@@ -1,0 +1,1415 @@
+body{
+	background-color: #FFFFFF;
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+	margin: 0px auto;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+#account{
+	width: 1200px;
+	height: 650px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	overflow-y: hidden;
+}
+#account .account-left{
+	border: 1px solid #EEEEEE;
+	width: 200px;
+	height: 600px;
+	border-top: 5px solid #4A3452;
+	margin-left: 50px;
+}
+#account .account-left .account-one{
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 200px;
+	border-bottom: 1px solid #EEEEEE;
+}
+#account .account-left .account-one div{
+	margin-left: 15px;
+	margin-top: 4px;
+	font-size: 15px;
+}
+#account .account-left .account-one div b{
+	margin-right: 10px;
+}
+#account .account-left .account-two{
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 200px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+#account .account-left .account-two div{
+	margin-left: 15px;
+	margin-top: 4px;
+	font-size: 15px;
+}
+#account .account-left .account-two div b{
+	margin-right: 10px;
+}
+#account .account-left .account-three{
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 200px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+#account .account-left .account-three div{
+	margin-left: 15px;
+	margin-top: 4px;
+	font-size: 15px;
+}
+#account .account-left .account-three div b{
+	margin-right: 10px;
+}
+#account .account-left .account-four{
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 200px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+#account .account-left .account-four div{
+	margin-left: 15px;
+	margin-top: 4px;
+	font-size: 15px;
+}
+#account .account-left .account-four div b{
+	margin-right: 10px;
+}
+#account .account-left .account-five{
+	background-color: #FAFAFA;
+	height: 30px;
+	width: 200px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+
+}
+#account .account-left .account-five div{
+	margin-left: 15px;
+
+	font-size: 15px;
+}
+#account .account-left .account-five div b{
+	margin-right: 10px;
+}
+#account .account-left .account-link a{
+	color: #2F549F;
+	text-decoration: none;
+	font-size: 14px;
+	width: 200px;
+	margin-left: 30px;
+	line-height: 30px;
+}
+#account .account-left .account-link p{
+	margin: 0px auto;
+}
+#account .account-left .account-link p:hover{
+	background-color: #F5F5F5;
+	margin-left: 2px;
+	border-right: 3px solid #4A3452;
+}
+
+/* 右边开始 */
+#account-right{
+	border: 1px solid  #EEEEEE;
+	height: 600px;
+	width: 950px;
+	margin-left: 10px;
+}
+#account-right .account-right-title{
+	height: 30px;
+	width: 950px;
+	border-top: 0px;
+	border-bottom: 1px solid #EEEEEE;		
+}
+#account-right .account-right-title div{
+	color: #4A3452;
+	font-size: 14px;
+	margin-left: 15px;
+	border-bottom: 0px;
+	height: 30px;
+	width: 100px;
+	border-top: 2px solid #4A3452;
+	border-right: 1px solid #EEEEEE;
+	background: #fff;
+	border-left: 1px solid #EEEEEE;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+ #account-right .account-right-user .account-right-img img{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-left: 50px;
+	margin-top: 10px;
+	float: left;
+	position: absolute;
+	border-radius: 50px;
+}
+#account-right .account-right-user .account-right-login{
+	display: inline-block;
+	float: left;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 145px;
+	font-size: 14px;
+	color: #4A3452;
+	
+}
+
+#account-right .account-right-user .account-right-login a{
+	padding-left: 15px;
+	text-decoration: none;
+	color: #2f549f;
+}
+ #account-right .account-right-user .account-right-cash{
+	display: inline-block;
+	margin-left: 350px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #4A3452;
+	height: 24px;
+	position: absolute;
+}
+#account-right .account-right-user .account-right-cash p{
+	display: inline-block;
+	color: red;
+	font-weight: bold;
+	margin-top: 0px;
+}
+#account-right .account-right-user .account-right-time{
+	display: inline-block;
+	clear: both;
+	float: left;
+	font-size: 14px;
+	color: #4A3452;
+	margin-top: 45px; 
+	margin-left: 145px;
+}
+
+#account-right .account-right-user .account-right-tx {
+	display: inline-block;
+	margin-top: 45px;
+	margin-left: 65px;
+	float: left;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 2px;
+}
+#account-right .account-right-user .account-right-tx a{
+	text-decoration: none;
+	color: #2f549f;
+	padding: 0px 5px 0px 5px;
+}
+#account-right .account-right-user .account-right-tx a:hover{
+	text-decoration: none;
+	color: #4A3452;
+	padding: 1px 6px 1px 6px;
+}
+#account-right .account-right-user .account-right-cc {
+	display: inline-block;
+	margin-top: 45px;
+	margin-left: 15px;
+	float: left;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 2px;
+}
+#account-right .account-right-user .account-right-cc a{
+	text-decoration: none;
+	color: #2f549f;
+	padding: 0px 5px 0px 5px;
+}
+#account-right .account-right-user .account-right-cc a:hover{
+	text-decoration: none;
+	color: #4A3452;
+	padding: 1px 6px 1px 6px;
+}
+#account-right .account-right-user .account-right-tel{
+	display: inline-block;
+	font-size: 14px;
+	color: #4A3452;
+	margin-top: 12px;
+	clear: both;
+	float: left;
+	margin-left: 145px;
+}
+#account-right .account-right-user .font a{
+	color: #c11930;
+	text-decoration: none;
+}
+#account-right .account-right-user .account-right-password{
+	display: inline-block;
+	float: left;
+	clear: both;
+	margin-left: 145px;
+	margin-top: 12px;
+	font-size: 14px;
+	color: #4A3452;
+}
+#account-right .account-right-user .account-right-password span{
+	margin-left: 60px;
+}
+#account-right .account-right-user .account-right-password span a{
+	color: #2f549f;
+	text-decoration: none;
+}
+#account-right .account-right-user .account-right-wk{
+	display: inline-block;
+	margin-top: 10px;
+	clear: both;
+	float: left;
+	margin-left: 145px;
+	font-size: 14px;
+	color: #4A3452;
+}
+#account-right .account-right-user .account-right-wk a{
+	text-decoration: none;
+	color: #2f549f;
+	margin-left: 60px;
+}
+#account-right .account-right-user .account-right-loginpw{
+	color: #333;
+	margin-top: 108px;
+	float: left;
+	position: absolute;
+	font-size: 14px;
+	margin-left: 390px;
+}
+#account-right .account-right-user .account-right-loginpw a{
+	color: #2f549f;
+	margin-left: 50px;
+	text-decoration: none;
+}
+#account-right  .accout-right-fgx{
+	border: 1px solid #ddd;
+	width: 930px;
+	margin-top:170px;
+	margin-left: 10px;
+}
+#account-right  .accout-right-title{
+	margin-top: 10px;
+	display: inline-block;
+	margin-left: 15px;
+	font-weight: bold;
+	color: #333;
+	font-size: 14px;
+}
+#account-right  .accout-right-fgxc{
+	border: 1px solid #eee;
+	width: 930px;
+	margin:10px auto;
+}
+#account-right .account-right-rz .account-right-rzsf .account-right-imgone {
+	display: inline-block;
+	margin-left: 15px;
+}
+#account-right .account-right-rz .account-right-rzsf .title{
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
+}
+#account-right .account-right-rz .account-right-rzsf .title h5{
+	margin: 0px;
+	margin-bottom: 5px;
+	color: #666;
+	font-size: 14px;
+	margin-left: 10px;
+}
+#account-right .account-right-rz .account-right-rzsf .title span{
+	border: 1px solid red	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	margin-left: 10px;
+}
+#account-right .account-right-rz .account-right-rzsf .rzlist{
+	display: inline-block;
+	margin-left: 740px;
+	background-color: #777;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 1px 3px 1px 3px;
+	position: absolute;
+	margin-top: 10px;
+}
+#account-right .account-right-rz .account-right-rzsf .rzlists{
+	display: inline-block;
+	margin-left: 800px;
+	color: #fff;
+	border-radius: 4px;
+	padding: 1px 3px 1px 3px;
+	position: absolute;
+	border: 1px solid #777;
+	font-size: 14px;
+	margin-top: 10px;
+}
+#account-right .account-right-rz .account-right-rzsf .rzlists a{
+	text-decoration: none;
+	color: #333;
+}
+/* 右边结束 */ 
+
+/*完善资料开始*/
+#account-right .account-right-name{
+	margin-top: 18px;
+	font-size: 14px;
+	color: #2f549f;
+	font-weight: bold;
+	margin-left: 85px;
+}
+
+#account-right .account-right-zl{
+	margin-top: 10px;
+}
+#account-right .account-right-zl .account-right-qf{
+	margin-left: 85px;
+}
+#account-right .account-right-zl .account-right-qf span{
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	position: absolute;
+	line-height: 35px;
+}
+#account-right  .account-right-zl .account-right-qf .account-select{
+	display: inline-block;
+	margin-left: 95px;
+}
+#account-right  .account-right-zl .account-right-qf .account-select select{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 280px;
+	margin-right: 10px;
+	height: 35px;
+	color: #666;
+	font-size: 12px;
+}
+
+
+/* 第一部分完 */
+#account-right .account-right-zl .account-right-rzzl{
+	margin-left: 85px;
+	margin-top: 25px;
+}
+#account-right .account-right-zl .account-right-rzzl span{
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	position: absolute;
+	line-height: 35px;
+}
+#account-right .account-right-zl .account-right-rzzl span b{
+	color: #a94442;
+}
+#account-right .account-right-zl .account-right-rzzl input{
+	border: 1px solid #ccc;
+	line-height: 30px;
+	margin-left: 95px;
+	border-radius: 4px;
+	width: 278px;
+	font-size: 15px;
+	color: #666;
+}
+#account-right .account-right-zl .account-right-rzzl .bm{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	margin-left: 10px;
+}
+#account-right .account-right-zl .account-right-rzzl .bm select{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 130px;
+	height: 35px;
+	margin-left: 0px;
+	border-radius: 4px;
+	color: #666;
+}
+#account-right .account-right-zl .account-right-rzzl .sfrz{
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-left: 55px;
+	padding:  5px 40px 5px 40px;
+	border-radius: 4px;
+	height: 23px;
+}
+#account-right .account-right-zl .account-right-rzzl .sfrz a{
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+}
+#account-right .account-right-zl .date{
+	margin-left: 85px;
+	margin-top: 20px;
+}
+#account-right .account-right-zl .date span{
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	position: absolute;
+	line-height: 35px;
+}
+#account-right .account-right-zl .date span b{
+	color: #a94442;
+}
+#account-right .account-right-zl .date .date-input{
+	display: inline-block;
+}
+#account-right .account-right-zl .date .date-input input{
+	border: 1px solid #ccc;
+	display: inline-block;
+	height: 30px;
+	width: 280px;
+	border-radius: 4px;
+	margin-left: 95px;
+}
+#account-right .account-right-email{
+	margin-left: 85px;
+	margin-top: 15px;
+}
+#account-right .account-right-email span{
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	position: absolute;
+	line-height: 35px;
+}
+#account-right .account-right-email input{
+	border: 1px solid #ccc;
+	height: 33px;
+	width: 320px;
+	border-radius: 4px;
+	margin-left: 65px;
+}
+#account-right .account-right-email .zlgk{
+	display: inline-block;
+}
+#account-right .account-right-email .zlgk select{
+	height: 35px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	width: 130px;
+	color: #666;
+}
+	
+#account-right .account-right-email .email-acc{
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-left: 5px;
+	padding:  5px 40px 5px 40px;
+	border-radius: 4px;
+	height: 23px;
+}
+#account-right .account-right-email .email-acc a{
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+}
+#account-right .submit{
+	border: 1px solid #ccc;
+	display: inline-block;
+	height: 30px;
+	width: 120px;
+	border-radius: 4px;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+#account-right .submit input{
+	background-color: #4A3452;
+	border: 0px;
+	font-size: 14px;
+	color: #FFFFFF;
+	height: 35px;
+	width: 300px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+#account-right .right-email{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#account-right .right-email .right-img{
+	display: inline-block;
+	position: absolute;
+}
+#account-right .right-email .right-title span{
+	margin-left: 70px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4A3452;
+}
+#account-right .right-email .right-title .right-input{
+	margin-left: 70px;
+	margin-top: 15px;
+	border: 1px solid #ccc;
+	height: 32px;
+	width: 500px;
+	border-radius: 4px;
+}
+#account-right .right-email .right-title .right-input input{
+	border: 0px;
+	height: 30px;
+	width: 500px;
+	border-radius: 4px;
+}
+#account-right .right-text{
+	margin-left: 100px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #4A3452;
+}
+#account-right .right-text .text-color{
+	font-weight: bold;
+	line-height: 30px;
+	color: #31708f;
+}
+#account-right .right-text span{
+	line-height: 30px;
+}
+#account-right .smrz{
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-color: #4A3452;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+}
+#account-right .smrz a{
+	color: #fff;
+	text-decoration: none;
+}
+#account-right .qyrz{
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+#account-right .qyrz a{
+	color: #4A3452;
+	text-decoration: none;
+}
+#account-right .right-email .right-file{
+	margin-left: 73px;
+	margin-top: 10px;
+}
+#account-right .right-email .right-file span{
+	font-size: 14px;
+	color: #4A3452;
+	font-weight: bold;
+}
+
+#account-right .right-email .right-file  input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#account-right .right-email .right-file .idcard img{
+	width: 200px;
+	height: 126px;
+}
+#account-right .money{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+#account-right .money .cash{
+	font-size: 14px;
+	font-weight: bold;
+	color: #4A3452;
+	display: inline-block;
+}
+#account-right .money .rmb{
+	color: #c11930;
+	font-size: 14px;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 15px;
+}
+#account-right .money .pay{
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#account-right .money .pay a{
+	text-decoration: none;
+	color: #2F549F;
+	padding:0px 25px 0px 25px;
+}
+#account-right .money .pay a:hover{
+	text-decoration: none;
+	color: #4A3452;
+	padding:0px 25px 0px 25px;
+}
+
+#account-right .money-list{
+	margin-top: 15px;
+	margin-left: 10px;
+	width: 930px;
+}
+#account-right .money-list .money-list-title{
+	border: 1px solid #eee;
+	background-color: #fafafa;
+}
+#account-right .money-list .money-list-title span{
+	font-size: 14px;
+	color: #4A3452;
+	font-weight: bold;
+	margin-left: 15px;
+}
+#account-right .money-list .money-list-cut{
+	margin-top: 15px;
+}
+#account-right .money-list .money-list-cut .a{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #4A3452;
+	font-weight: bold;
+}
+#account-right .money-list .money-list-cut .b{
+	font-size: 14px;
+	color: #fff;
+	background-color: #4A3452;
+	line-height: 30px;
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+	margin-left: 25px;
+}
+#account-right .money-list .money-list-cut .c{
+	font-size: 14px;
+	color:#2F549F;
+	margin-left: 20px;
+	line-height: 30px;
+}
+#account-right .money-list .money-list-cut .c:hover{
+	font-size: 14px;
+	color:#2F549F;
+	margin-left: 15px;
+	background-color: #ccc;
+	padding: 2px 5px 2px 5px;
+	border-radius: 4px;
+}
+
+#account-right .money-list .so .so-input{
+	border: 1px solid #ccc;
+	display: inline-block;
+	line-height: 30px;
+	width: 180px;
+	height: 30px;
+	border-radius: 4px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#account-right .money-list .so .so-input input{
+	border: 0px;
+	line-height: 30px;
+	height: 28px;
+	border-radius: 4px;
+	color: #666;
+	text-indent: 10px;
+}
+#account-right .money-list .so .so-select{
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-left: 10px;
+	width: 105px;
+	height: 30px;
+	border-radius: 4px;
+}
+#account-right .money-list .so .so-select select{
+	width: 105px;
+	height: 30px;
+	border-radius: 4px;
+	border: 0px;
+	color: #666;
+}
+#account-right .money-list .so .so-submit{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	border-radius: 4px;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+#account-right .money-list .so .so-submit input{
+	border: 0px;
+	background-color: #fff;
+	height: 30px;
+	width: 50px;
+	border-radius: 4px;
+}
+#account-right .money-list .list-title{
+	margin-top: 10px;
+}
+#account-right .money-list .list-title .list-title-a{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+#account-right .money-list .list-title .list-title-b{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left:85px;
+}
+#account-right .money-list .list-title .list-title-c{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 85px;
+}
+#account-right .money-list .list-title .list-title-d{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 85px;
+}
+#account-right .money-list .list-title .list-title-e{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 188px;
+}
+
+#account-right .money-list .list-title .list-title-f{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 80px;
+}
+
+/****************************列表内容******************************************/
+ #account-right .money-list .list-fgx{
+ 	border: 1px solid #ccc;
+ 	margin-top: 10px;
+ 	line-height: 30px;
+ }
+ #account-right .money-list .list-content{
+	margin-top: 10px;
+}
+#account-right .money-list .list-content:hover{
+	background-color: #eee;
+	height: 30px;
+
+}
+#account-right .money-list .list-content .list-content-a{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-b{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 120px;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-bb{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 145px;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-c{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 240px;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-cc{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left:517px;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-d{
+	display: inline-block;
+	font-size: 14px;
+	color: #c11930;
+	margin-left: 360px;
+	position: absolute;
+	font-weight: bold;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-dd{
+	display: inline-block;
+	font-size: 14px;
+	color: #c11930;
+	margin-left: 266px;
+	position: absolute;
+	font-weight: bold;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-dd .color{
+	font-size: 14px;
+	color: #fff;
+	background-color: #4A3452;
+	line-height: 30px;
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+	margin-left: 15px;
+}
+#account-right .money-list .list-content .list-content-d .color{
+	font-size: 14px;
+	color: #fff;
+	background-color: #4A3452;
+	line-height: 30px;
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+	margin-left: 25px;
+}
+#account-right .money-list .list-content .list-content-d .fontcolor{
+	font-size: 14px;
+	color: #fff;
+	background-color: #2f549f;
+	line-height: 30px;
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+	margin-left: 25px;
+}
+#account-right .money-list .list-content .list-content-e{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 727px;
+	position: absolute;
+	line-height: 30px;
+}
+#account-right .money-list .list-content .list-content-ee{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 627px;
+	position: absolute;
+	line-height: 30px;
+}
+
+#account-right .money-list .list-content .list-content-f{
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+	margin-left: 835px;
+}
+#account-right .money-list  .page{
+	margin-top: 25px;
+}
+#account-right .money-list .page span {
+	border: 1px solid #ddd;
+}
+#account-right .money-list  span a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #2F549F;	
+}
+#account-right .money-list  span a:hover{
+	font-size: 12px;
+	text-decoration: none;
+	color: #333;	
+}
+#account-right .page {
+	margin-top: 20px;
+	display: inline-block;
+	margin-left: 20px;
+}
+#account-right .page span{
+	border: 1px solid #ccc;
+	padding: 0px 6px 0px 6px;
+}
+#account-right .page span a{
+	font-size: 12px;
+	color: #2F549F;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+}
+/****************************************************************************/
+#account-right .account-right-zl .account-right-link input{
+	border: 1px solid #ccc;
+	line-height: 30px;
+	border-radius: 4px;
+	width: 600px;
+	font-size: 15px;
+	color: #666;
+	background-color: #fff;
+	text-indent: 10px;
+}
+#account-right .account-right-zl .account-right-link {
+	display: inline-block;
+	width: 600px;
+	margin-left: 85px;
+}
+#account-right .account-right-zl{
+	display: inline-block;
+}
+#account-right  .copy{
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	text-indent: 10px;
+}
+#account-right  .copy input{
+	border: 0px;
+	background-color: #2F549F;
+	color: #fff;
+	line-height: 28px;
+	text-align: center;
+	width: 80px;
+	border-radius: 4px;	
+}
+#account-right  .content{
+	margin-left: 85px;
+	margin-top: 10px;
+	width: 800px;
+}
+#account-right  .content span{
+	font-size: 12px;
+	color: #31708f;
+}
+#account-right  .content img{
+	width: 10px;
+	height: 10px;
+}
+#account-right  .payment{
+	margin-left: 85px;
+	margin-top: 10px;
+}
+#account-right  .payment span{
+	font-size: 14px;
+	font-weight: bold;
+	color: #2f549f;
+}
+#account-right .list-tc{
+	width: 900px;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+#account-right .list-tc .list-tc-title{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-right: 250px;
+}
+#account-right .list-tc  .list-tc-fgx{
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#account-right .list-tc  .list-tc-a{
+	display: inline-block;
+	margin-right: 240px;
+	font-size: 12px;
+	color: #666;
+}
+#account-right .list-tc  .list-tc-fgxlist{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #ccc;
+	height: 1px;
+}
+
+#account-right .list-table table{
+	margin-left: 20px;
+	margin-top: 15px;
+	border: 0px;
+}
+#account-right .list-table th{
+	border: 0px;
+	color: #333;
+	font-size: 14px;
+	padding-right: 100px;
+}
+#account-right .list-table td{
+	border: 0px;
+	color: #666;
+	padding-top: 10px;
+}
+
+/****************************************************/
+#account-right .class-content{
+	width: 915px;
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	border-bottom: 1px solid #eee;
+}
+#account-right .class-content .class-list-left{
+	width: 725px;
+	height: 60px;
+	float: left;
+}
+#account-right .class-content .class-list-left .class-img{
+	display: inline-block;
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	margin-top: 3px;
+}
+#account-right .class-content .class-list-left .class-href{
+	display: inline-block;
+	margin-left: 65px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#account-right .class-content .class-list-left .class-href a{
+	color: #2f549f;
+	text-decoration: none;
+}
+#account-right .class-content .class-list-left .class-face{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+}
+#account-right .class-content .class-list-left .class-how{
+	margin-left: 65px;
+	font-size: 12px;
+	color: #333;
+}
+#account-right .class-content .class-list-left .class-work{
+	display: inline-block;
+	margin-left: 65px;
+	font-size: 12px;
+	color: #666;
+
+}
+#account-right .class-content .class-list-right{
+	width: 155px;
+	height: 60px;
+	float: left;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+#account-right .class-content .class-list-right .class-gz{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #5cb85c;
+	padding: 2px 6px 2px 6px;
+	color: #fff;
+	border-radius: 4px;
+}
+#account-right .class-content .class-list-right .class-gxgz{
+	display: inline-block;
+	font-size: 14px;
+	border-color: #ccc;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	padding: 2px 6px 1px 6px;
+	border-radius: 4px;
+}
+/********************************************************************************************************/
+
+#account-right  .money-list .table-list{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+}
+
+#account-right  .money-list .table-list  .table thead tr th{
+	padding-right: 110px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #ddd;
+}
+#account-right  .money-list .table-list  .table tbody tr td a{
+	color: #2F549F;
+}
+#account-right  .money-list .table-list  .table tbody tr td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+#account-right  .money-list .table-list  .table tbody tr:hover {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+#account-right  .money-list .table-list  .table tbody tr td  .rmb{
+	color: #C41930;
+}
+/****************************************************************************************/
+#account-right  .money-list .list-table{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+}
+#account-right  .money-list .list-table  .table thead tr th{
+	padding-right: 170px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #ddd;
+}
+#account-right  .money-list .list-table  .table tbody tr td a{
+	color: #2F549F;
+}
+#account-right  .money-list .list-table  .table tbody tr td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+#account-right  .money-list .list-table  .table tbody tr:hover{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+#account-right .work-title{
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+	width: 920px;
+	height: 55px;
+	margin: 10px auto;
+	font-size: 14px;
+	text-indent: 50px;
+	border-radius: 4px;
+}
+#account-right .work-title span{
+	position: absolute;
+	margin-top: 15px;
+}
+/**************************/
+#account-right .pubtask-input-from{
+	display: inline-block;
+	width: 880px;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+#account-right .pubtask-input-from .pubtask-text{
+	display: inline-block;
+}
+#account-right .pubtask-input-from .pubtask-span{
+	font-size: 14px;
+	color: #666;
+	display: inline-block;
+	float: right;
+	line-height: 30px;
+	width: 130px;
+	font-weight: bold;
+	position: absolute;
+}
+#account-right .pubtask-input-from .pubtask-ts{
+	position: absolute;
+	margin-top: 10px;
+	float: left;
+	clear: both;
+	font-size: 12px;
+	margin-left: 200px;
+	color: #666;
+}
+#account-right .pubtask-input-from span b{
+	color: red;
+	vertical-align: middle;
+}
+#account-right .work-type{
+	width: 600px;
+	margin-top: 10px;
+	margin-left: 80px;
+	font-size: 14px;
+	color: #666;
+	line-height: 28px;
+}
+#account-right .work-type span{
+	font-weight: bold;
+	color: #666;
+}
+#account-right .work-name{
+	width: 600px;
+	margin-top: 10px;
+	margin-left: 80px;
+	font-size: 14px;
+	color: #666;
+	line-height: 28px;
+	margin-top: 10px;
+}
+#account-right .work-name .work-name-a{
+	font-weight: bold;
+	float: right;
+	position: absolute;
+}
+
+#account-right .work-name .work-name-input{
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 4px;
+	margin-left: 90px;
+
+}
+#account-right .work-name .work-name-input input{
+	border: 0px;
+	width: 300px;
+	height: 26px;
+	border-radius: 4px;
+}
+
+#account-right .work-col{
+	margin-left: 80px;
+	margin-top: 10px;
+}
+#account-right .work-col .work-qm{
+	float: right;
+	position: absolute;
+	margin-top: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666;
+}
+#account-right .work-col .work-log{
+	border: 1px solid #eee;
+	width: 400px; 
+	height: 115px;
+	margin-left: 90px;
+	display: list-item;
+}
+#account-right .work-col .help-block{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #666;
+	position: absolute;
+	margin-left: 90px;
+}
+/*************wk_list.html*************/
+#account-right  .money-list .l-table{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+}
+#account-right  .money-list .l-table  .table thead tr th{
+	padding-right: 95px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #ddd;
+}
+#account-right  .money-list .l-table  .table tbody tr td a{
+	color: #2F549F;
+}
+#account-right  .money-list .l-table  .table tbody tr td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+#account-right  .money-list .l-table  .table tbody tr:hover {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+/***********wk_gl.html**************/
+#account-right  .money-list .lgl-table{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+}
+#account-right  .money-list .lgl-table  .table thead tr th{
+	padding-right: 200px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #ddd;
+}
+#account-right  .money-list .lgl-table  .table tbody tr td a{
+	color: #2F549F;
+}
+#account-right  .money-list .lgl-table  .table tbody tr td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+#account-right  .money-list .lgl-table  .table tbody tr:hover {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+/**************message_notice.html************/
+#account-right  .money-list .ll-table{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+}
+#account-right  .money-list .ll-table  .table thead tr th{
+	padding-right:150px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #ddd;
+}
+#account-right  .money-list .ll-table  .table tbody tr td a{
+	color: #2F549F;
+}
+#account-right  .money-list .ll-table  .table tbody tr td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+}
+#account-right  .money-list .ll-table  .table tbody tr:hover {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+/***********************del****************************/
+#account-right  .money-list .message-del{
+	margin-top: 20px;
+}
+#account-right  .money-list .message-del div{
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 5px 10px 5px 10px ;
+	font-size: 12px;
+	border-radius: 4px;
+	color: #333;
+}
+#account-right  .money-list .message-del div:hover{
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 5px 10px 5px 10px ;
+	font-size: 12px;
+	background-color: #eee;
+	border-radius: 4px;
+}
+#account-right .money-list .fqqb{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	background-color: #4A3452;
+	border-radius: 4px;
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#account-right .money-list .sdqb{
+	display: inline-block;
+	font-size: 14px;
+	color:#2F549F;
+	border-radius: 4px;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+}

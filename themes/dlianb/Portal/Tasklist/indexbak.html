@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>订单大厅-{$site_name}-{$site_seo_title}</title>
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/tasklist.css" />
+	<script type="text/javascript" src="__TMPL__Public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/js/tasklist.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(function(){
+		$(".index-nav-list ul li").eq(1).addClass("index-nav-select").siblings().removeClass("index-nav-select");
+	});	
+</script>
+<tc_include file="Public:nav" />
+<!-- 订单大厅左边开始 -->
+	<div id="list">
+		<div class="list-left">
+			<div class="list-left-one">
+				<h5><b></b>游戏区服</h5>
+				<div class="list-left-cont">
+					<foreach name="area" item="v" key="k">
+					<ul class="<if condition='$k%2'>list-left-back<else/></if>">
+						<li><a href="{:U('area/list',array('id'=>$v['id']))}">{$v.area}-{$v.areas}</a></li>
+					</ul>
+					</foreach>	
+				</div>
+			</div>
+			<div class=" list-left-two">
+				<h5><b></b>最新发布动态</h5>
+				<foreach name="showtime" item="showtime">
+				<div class="list-left-user">
+					<p class="list-left-title">订单</p>
+					<p class="list-left-rmb">￥{$showtime.reward}</p>
+					<p class="list-left-dw">{$showtime.title|msubstr=0,5,'utf-8',false}</p>
+					<p class="list-left-name">{$showtime.user_login}发布</p>
+					<p class="list-left-time">{$showtime.lasttime}</p>
+				</div>
+				</foreach>
+			</div>
+			<div class="list-left-three">
+				<h5><b></b>推荐工作室</h5>
+				<volist name="office" id="office">
+				<div class="list-left-user">
+					<img src="__TMPL__Public/images/{$office.img}" alt="" />
+					<p class="list-left-title"><a href="">{$office.title}</a></p>
+					<p class="list-left-hp">好评率 </p><p class="list-left-font">{$office.haop}%</p>
+					<p class="list-left-color">{$office.service}</p>
+					<p class="list-left-qy">{$office.honor}-{$office.dan}</p>
+				</div>
+				</volist>
+			</div>
+		</div>
+		<!-- 订单大厅左边结束 -->
+		<!-- 订单大厅右边开始 -->
+		<div class="list-right">
+			<div class="list-right-one">
+				<img src="__TMPL__Public/images/de.png" alt="" />
+			</div>
+			<div class=" list-right-two">
+				<div class="list-right-title">
+					<p>所有订单</p>
+				</div>
+				<div class="list-right-list">
+					<h5>订单状态</h5>
+					<p class="list-right-check">全部</p>
+					<p>工作中</p>
+					<p>待接单</p>
+					<p>交付中</p>
+					<p>已结束</p>
+				</div>
+				<div class="list-right-fl">
+					<p class="list-right-check">剩余时间</p>
+					<p >金额</p>
+					<p>查看数</p>
+				</div>
+			</div>
+			<div class="list-right-three">
+				<div class="list-right-cotent">
+					<p class="list-right-name">名称</p>
+					<p class="list-right-money">代练款</p>
+					<p class="list-right-class">游戏区服</p>
+					<p class="list-right-look">查看/接单</p>
+					<p class="list-right-status">状态</p>
+					<p class="list-right-collect">收藏</p>
+				</div>
+				<foreach name="list" item="list">
+				<div class="list-right-show">
+					<div class="list-right-mc"><a href="{:U('Pubtask/index',array('id'=>$list['id']))}">{$list.title|msubstr=0,15,'utf-8',false}</a></div>
+					<div class="list-right-jg">￥{$list.reward}</div>
+					<div class="list-right-qymc">{$list.area}-{$list.areas}</div>
+					<div class="list-right-dd">{$list.num}/1</div>
+					<div class="list-right-type">
+						<if condition="($list['status'] eq 1)">
+							公示中
+						<elseif condition="($list['status'] eq 2)"/>
+							已接单
+						<elseif condition="($list['status'] eq 3)"/>
+							代练中
+						<elseif condition="($list['status'] eq 4)"/>
+							交付中
+						<elseif condition="($list['status'] eq 5)"/>
+							结算中
+						<elseif condition="($list['status'] eq 6)"/>
+							完成订单
+						</if>					
+					</div>
+					<div class="list-right-sc"><img src="__TMPL__Public/images/02-02.png" alt="" /></div>
+					<div class="list-right-cont">{$list.title|msubstr=0,45,'utf-8',false}</div>
+					<div class="list-right-fb"><a href="{:U('Pubtask/index',array('id'=>$list['id']))}" title="">发布类似订单</a></div>
+				</div>
+				</foreach>
+			
+			</div>
+			<div class="list-right-page">
+			{$page}
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+$(function(){
+	$(".list-right-list p").eq(0).click(function() {
+		var all = "";
+		$.ajax({
+			type: "POST",
+			url: "{:U('Tasklist/tlist')}",
+			dataType:'json',
+			data: {list:all},
+				success: function(data){
+					str = "";
+					for(var i = 0, j = data.length;i<j;i++){
+						str += '';	
+						//alert(data[i]['picture_dir']);			
+					}
+					$('.list-right-show').html('');
+					$('.list-right-show').html(str);
+				}
+		});
+	});
+	$(".list-right-list p").eq(1).click(function() {
+		var all1 = "work";
+		$.ajax({
+			type: "POST",
+			url: "{:U('Tasklist/tlist')}",
+			dataType:'json',
+			data: {list:all1},
+				success: function(data){
+					str = "";
+					for(var i = 0, j = data.length;i<j;i++){
+						str += '';	
+						alert(data[i]['title']);			
+					}
+					//$('.list-right-show').html('');
+					//$('.list-right-show').html(str);
+				}
+		});
+	});
+	$(".list-right-list p").eq(2).click(function() {
+		var all2 = "jdz";
+		$.ajax({
+			type: "POST",
+			url: "{:U('Tasklist/tlist')}",
+			dataType:'json',
+			data: {list:all2},
+				success: function(data){
+					str = "";
+					for(var i = 0, j = data.length;i<j;i++){
+						str += '';	
+						//alert(data[i]['picture_dir']);			
+					}
+					$('.list-right-show').html('');
+					$('.list-right-show').html(str);
+				}
+		});
+	});
+	$(".list-right-list p").eq(3).click(function() {
+		var all3 = "jfz";
+		$.ajax({
+			type: "POST",
+			url: "{:U('Tasklist/tlist')}",
+			dataType:'json',
+			data: {list:all3},
+				success: function(data){
+					str = "";
+					for(var i = 0, j = data.length;i<j;i++){
+						str += '';	
+						//alert(data[i]['picture_dir']);			
+					}
+					$('.list-right-show').html('');
+					$('.list-right-show').html(str);
+				}
+		});
+	});	
+	$(".list-right-list p").eq(4).click(function() {
+		var all4 = "zsl";
+		$.ajax({
+			type: "POST",
+			url: "{:U('Tasklist/tlist')}",
+			dataType:'json',
+			data: {list:all4},
+				success: function(data){
+					str = "";
+					for(var i = 0, j = data.length;i<j;i++){
+						str += '';	
+						//alert(data[i]['picture_dir']);			
+					}
+					$('.list-right-show').html('');
+					$('.list-right-show').html(str);
+				}
+		});
+	});		
+})
+	</script>
+<!-- 订单大厅右边结束 -->
+<tc_include file="Public:footer" />
+</body>
+</html>

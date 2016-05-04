@@ -1,0 +1,243 @@
+#list .list-right .list-right-three {
+	border-top: 2px solid #4A3452;
+}
+
+#list .list-right .list-right-three  .list-content{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 1px solid #eee;
+	padding: 0px 2px 10px 2px;
+}
+#list .list-right .list-right-three  .list-content:hover{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	background-color: #eee;
+}
+#list .list-right .list-right-three  .list-content .img{
+	display: inline-block;
+}
+#list .list-right .list-right-three  .list-content .img img{
+	width: 100px;
+	height: 100px;
+}
+#list .list-right .list-right-three  .list-content .title{
+	display: inline-block;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#list .list-right .list-right-three  .list-content .title a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+#list .list-right .list-right-three  .list-content .title a:hover{
+	font-size: 14px;
+	font-weight: bold;
+	color: #2f549f;
+}
+#list .list-right .list-right-three  .list-content .cjsl{
+	display: inline-block;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 10px;
+	font-size: 12px;
+	color: #555;
+}
+#list .list-right .list-right-three  .list-content .cjsl .color{
+	color: #a94442;
+}
+#list .list-right .list-right-three  .list-content .fpz{
+	display: inline-block;
+	position: absolute;
+	margin-top: 68px;
+	margin-left: 10px;
+	color: #555;
+	font-size: 12px;
+}
+#list .list-right .list-right-three  .list-content .money{
+	display: inline-block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 450px;
+	color: #c11930;
+	font-weight: bold;
+}
+#list .list-right .list-right-three  .list-content .zhpf{
+	display: inline-block;
+	position: absolute;
+	margin-top:47px;
+	margin-left: 456px;
+	font-size: 12px;
+	color: #555;
+}
+#list .list-right .list-right-three  .list-content .gm{
+	border: 1px solid #ddd;
+	display: inline-block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 600px;
+	padding: 0px 84px 0px 84px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #555;
+}
+#list .list-right .list-right-three  .list-content .gm a{
+	color: #555;
+	text-decoration: none;
+}
+#list .list-right .list-right-three  .list-content .sc{
+	border: 1px solid #ddd;
+	display: inline-block;
+	position: absolute;
+	margin-top: 55px;
+	margin-left: 600px;
+	font-size: 12px;
+	padding: 1px 30px 1px 30px;
+	color: #555;
+}
+#list .list-right .list-right-three  .list-content .sc a{
+	color: #555;
+	text-decoration: none;
+}
+#list .list-right .list-right-three  .list-content .work{
+	border: 1px solid #ddd;
+	display: inline-block;
+	position: absolute;
+	margin-top: 55px;
+	margin-left: 696px;
+	font-size: 12px;
+	padding: 1px 18px 1px 18px;
+	color: #555;
+}
+#list .list-right .list-right-three  .list-content .work a{
+	color: #555;
+	text-decoration: none;
+}
+
+/************************sellerlist页内容列表加载*****************************/
+#list .list-right .list-right-three  .list-content .list-item-body{
+
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a{
+	float: left;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .pic_middle{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj{
+	display: inline-block;
+	position: inherit;
+	float: left;
+	margin-left: 10px;
+	height: 100px;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item{
+	font-size: 14px;
+	line-height: 25px;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item .list-title{
+	text-decoration: none;
+	color: #333;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item .list-title:hover{
+	text-decoration: none;
+	color: #2f549f;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item  .absmiddle{
+	width: 10px;
+	height: 10px;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item{
+	font-size: 12px;
+	color: #666;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item .btn{
+	background-color: #2f549f;
+	padding: 2px 5px 2px 5px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 2px;
+	margin-right:10px; 
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-a .list-obj .list-obj-item .btn-a{
+	color: #333;
+	border-color: #ccc;
+	background-color: #ddd;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-b{
+	float: right;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-b li{
+	display: inline-block;
+	margin-right: 54px;
+	margin-top: 15px;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-b p{
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+#list .list-right .list-right-three  .list-content .list-item-body .list-b .user-num{
+	font-size: 18px;
+	color: #c11930;
+	margin-left: -3px;
+}
+#list .list-right .list-right-three  .list-content .list-item-min{
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+#list .list-right .list-right-three  .list-content .list-item-min li{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+#list .list-right .list-right-three  .list-content .list-item-min .w1{
+	width: 406px;
+	margin-top: 5px;
+}
+#list .list-right .list-right-three  .list-content .list-item-min a{
+	color: #333;
+	text-decoration: none;
+}
+#list .list-right .list-right-three  .list-content .list-item-min a:hover{
+	color: #2f549f;
+	text-decoration: none;
+}
+#list .list-right .list-right-three  .list-content .list-item-min .w2{
+	margin-top: 5px;
+	width: 170px;
+}
+#list .list-right .list-right-three  .list-content .list-item-min .w3{
+	margin-top: 5px;
+	width: 170px;
+}
+#list .list-right .list-right-three  .list-content .list-item-min .d1{
+	color:  #c11930;
+}
+#list .list-right .list-right-three  .list-content .list-item-min .w4{
+	margin-top: 5px;
+	width: 170px;
+}
+#list .list-right .list-right-three  .list-content .list-item-footer{
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+}
+#list .list-right .list-right-three  .list-content .list-item-footer a{
+	color: #333;
+	text-decoration: none;
+	margin-top: 2px;
+}
+#list .list-right .list-right-three  .list-content .list-item-footer a:hover{
+	color: #2f549f;
+}

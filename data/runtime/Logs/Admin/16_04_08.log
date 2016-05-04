@@ -1,0 +1,14 @@
+[ 2016-04-08T17:10:30+08:00 ] ::1 /dlianb/index.php/Admin/setting/site_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dlianb_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dlianb_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dlianb_options` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `dlianb_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `dlianb_options` SET `option_id`='2',`option_name`='site_options',`option_value`='{\"site_name\":\"\\u4e2d\\u56fd\\u7f51\\u6e38\\u4ee3\\u7ec3\\u5427\",\"site_host\":\"http:\\/\\/localhost\\/\",\"site_admin_url_password\":\"\",\"site_tpl\":\"dlianb\",\"site_adminstyle\":\"bluesky\",\"site_icp\":\"\",\"site_admin_email\":\"974291@qq.com\",\"site_tongji\":\"\",\"site_copyright\":\"\",\"site_seo_title\":\"\\u5e26\\u573a\\u00b7\\u4ee3\\u7ec3\\u00b7\\u966a\\u73a9\\u00b7\\u4e13\\u4e1a\\u7684\\u6e38\\u620f\\u670d\\u52a1\\u5e73\\u53f0!\",\"site_seo_keywords\":\"\\u4ee3\\u7ec3,\\u4e2d\\u56fd\\u7f51\\u6e38\\u4ee3\\u7ec3\\u5427,\\u82f1\\u96c4\\u8054\\u76df,\\u6e38\\u620f\\u4ee3\\u7ec3\",\"site_seo_description\":\"\\u4e2d\\u56fd\\u7f51\\u6e38\\u4ee3\\u7ec3\\u5427dlianb.com\\uff0c\\u662f\\u56fd\\u5185\\u4e13\\u4e1a\\u7684\\u6e38\\u620f\\u670d\\u52a1\\u5e73\\u53f0\\uff0c\\u5e26\\u573a\\u3001\\u4ee3\\u7ec3\\u3001\\u966a\\u73a9\\uff0c\\u90fd\\u5728\\u8fd9\\u91cc\\u4e86\\uff0c\\u6211\\u4eec\\u62e5\\u6709\\u900f\\u660e\\u7684\\u9700\\u6c42\\u3001\\u516c\\u5f00\\u7684\\u62a5\\u4ef7\\uff0c\\u8fd9\\u91cc\\u662f\\u9ad8\\u5927\\u4e0a\\u6e38\\u620f\\u7684\\u70ed\\u95e8\\u4e92\\u52a8\\u548c\\u670d\\u52a1\\u5e73\\u53f0\\u3002\",\"urlmode\":\"1\",\"html_suffix\":\".html\",\"comment_time_interval\":60}' WHERE ( option_name='site_options' ) [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `dlianb_options` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `dlianb_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `dlianb_options` SET `option_name`='cmf_settings',`option_value`='{\"banned_usernames\":\"\"}' WHERE ( option_name='cmf_settings' ) [ RunTime:0.0000s ]
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>{$site_name}-{$site_seo_title}</title>
+	<meta name="keywords" content="{$site_seo_keywords}" />
+	<meta name="description" content="{$site_seo_description}">
+	<script type="text/javascript" src="__TMPL__Public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/js/index.js"></script>
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/index.css" />
+</head>
+<script type="text/javascript">  
+	$(document).ready(function() {  
+		$(".site-nav li").hover(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			var index=$(this).index();
+			$(".tab").eq(index).show().siblings().hide();
+		});
+	});  	
+</script> 
+<script type="text/javascript">
+	$(function(){
+		$(".index-nav-list ul li").eq(0).addClass("index-nav-select").siblings().removeClass("index-nav-select");
+	});	
+</script>	
+<!-- 加载通用导航 -->
+<tc_include file="Public:nav" />
+	<div id="index-banner">
+		<div class="index-banner-pic">
+			<img src="__TMPL__Public/images/index-banner.jpg" alt="" />
+			<div class="index-banner-reg">
+			<if condition="empty($_SESSION['user_name'])">
+				<div class="right-reg"><a href="{:U('user/register/index')}">注册帐号</a></div>
+				<div class="right-login"><a href="{:U('user/login/index')}">用户登陆</a></div>
+			<else />
+				<div class="right-reg"><a href="{:U('user/register/index')}">我是号主</a></div>
+				<div class="right-login"><a href="{:U('user/login/index')}">我是打手</a></div>
+			</if>
+				<!-- <div class="right-qq">
+					<span>第三方帐号登录：</span>
+					<a href=""><img src="__TMPL__Public/images/qqlogo.png" alt="" /></a>
+					<a href=""><img src="__TMPL__Public/images/weib.png" alt="" /></a>
+				</div> -->
+				<div class="right-user"><a href="{:U('pubtask/index')}">发布订单</a></div>
+				
+				<div class="site-content">
+					<ul class="site-nav">
+						<li class="active nav-one"><a href="">公告</a></li>
+						<li class="nav-two"><a href="">接单通知</a></li>
+						<li class="nav-three"><a href="">提现</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab tab-one">
+							<ul>
+								<foreach name="message" item="vo">
+								<li>
+									<i>·</i><a href="{:U('article/index',array('id'=>$vo['id']))}" target="_blank">{$vo.title|msubstr=0,19,'utf-8',false}</a>
+								</li>
+								</foreach>
+							</ul>
+						</div>
+						<div class="tab tab-two">
+							<ul>
+								<foreach name="homedd" item="homedd">
+								<li>
+									<i>·</i>{$homedd.user_login} 中标 <a href="{:U('Task/index',array('id'=>$homedd['id']))}" target="_blank">{$homedd.title|msubstr=0,12,'utf-8',false}</a>
+								</li>
+								</foreach>
+							</ul>
+						</div>
+						<div class="tab tab-three">
+							<ul>
+								<li>
+									<i>·</i>Rex 提现<span class="money">9.50元</span>
+								</li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="index-list">
+		<div class="a-left">
+			<div class="right-list">
+				<div class="right-list-title"><b>|</b><span>代练订单</span></div>
+				<div class="right-list-content">
+				<foreach name="area" item="area">
+					<div class="right-list-link"><span><a href="{:u('Tasklist/index',array('id'=>$area['id']))}">{$area.area}-{$area.areas}、</a></span></div>
+				</foreach>	
+				</div>
+			</div>
+			<div class="right-list-dd">
+				<div class="dd-title"><a href="{:U('Tasklist/index')}">更多>></a></div>
+				<foreach name="indent" item="indent">
+				<div class="dd-content">
+					<span class="money">￥{$indent.reward}</span>
+					<a href="">{$indent.title|msubstr=0,10,'utf-8',false}</a>
+					<span class="fb">{$indent.uname}</span>
+					<span class="fb">{$indent.num}投标</span>
+				</div>
+				</foreach>
+			</div>
+		</div>
+		<div class="a-right">
+			<div class="right-list-title">
+				<b>|</b>
+				<span class="font">中标动态</span>
+				<span class="up">▲</span>
+				<span class="down">▼</span>
+			</div>
+			<foreach name="zbdt" item="zbdt">
+			<div class="right-list-content">
+				<a href=""><img src="__TMPL__Public/images/{$zbdt.img}" alt="" /></a>
+				<div class="content-name">{$zbdt.title|msubstr=0,10,'utf-8',false}</div>
+				<div class="content-fb">{$zbdt.lasttime|date="m-d",###}发布</div>
+				<div class="content-money">￥{$zbdt.num}</div>
+				<div class="content-link"><a href="">{$zbdt.title|msubstr=0,15,'utf-8',false}</a></div>
+			</div>
+			</foreach>
+		</div>
+	</div>
+<!-- 第一部分结束 -->
+	<div id="index-list">
+		<div class="a-left">
+			<div class="right-list">
+				<div class="right-list-title"><b>|</b><span>代练套餐</span></div>
+				<div class="right-list-content">
+				<foreach name="are" item="are">
+					<div class="right-list-link"><span><a href="{:u('Tasklist/index',array('id'=>$are['id']))}">{$are.area}-{$are.areas}</a></span></div>
+				</foreach>
+				</div>
+			</div>
+			<div class="right-list-dd">
+				<div class="dd-title"><a href="">更多>></a></div>
+				<foreach name="ddcolist" item="ddcolist">
+				<div class="dd-colist">
+					<a href="{:u('Work/index',array('id'=>$ddcolist['id']))}"><img src="__TMPL__Public/images/{$ddcolist.img}" alt="" /></a>
+					<span class="dd-t">{$ddcolist.title}</span>
+					<span class="dd-m">￥{$ddcolist.money}元</span>
+					<span class="dd-n">{$ddcolist.user_login}发布</span>
+				</div>
+				</foreach>
+			</div>
+		</div>
+		<div class="a-right">
+			<div class="right-list-title">
+				<b>|</b>
+				<span class="font">推荐工作室</span>
+			</div>
+			<foreach name="tjoffice" item="tjoffice">
+			<div class="right-list-co">
+				<a href=""><img src="__TMPL__Public/images/{$tjoffice.img}" alt="" /></a>
+				<div class="content-all">
+					<div class="content-a">{$tjoffice.title}</div>
+					<div class="content-b"><span>好评率</span>{$tjoffice.haop}%</div>
+					<div class="content-d">{$tjoffice.service}</div>
+					<div class="content-d">{$tjoffice.area}-{$tjoffice.areas}</div>
+				</div>
+			</foreach>	
+			</div>	
+		</div>
+	</div>
+<!-- 第三部分开始 -->
+<div id="index-list">
+		<div class="a-left">
+			<div class="right-list">
+				<div class="right-list-title"><b>|</b><span>成功案例</span></div>
+				<div class="right-list-content">
+				<foreach name="cglist" item="cglist">
+					<div class="right-dd">
+						<a href=""><img src="__TMPL__Public/images/{$cglist.img}" alt="" /></a> 
+						<div class="r-a">{$cglist.title}</div>
+						<div class="r-b">赏金：<span>￥{$cglist.reward}</span></div>
+						<div class="r-b">发布人：{$cglist.user_nicename}</div>
+						<div class="r-b">接单：{$cglist.cont}个</div>
+					</div>
+				</foreach>
+				</div>
+			</div>
+			<div class="right-list-dd">
+				<div class="dd-title"><a href="">更多>></a></div>
+				<volist name="office_zg" id="office_zg">
+				<div class="dd-colist">
+					<a href=""><img src="__TMPL__Public/images/man_big.jpg" alt="" /></a>
+					<span class="dd-t">{$office_zg.title}</span>
+					<span class="dd-n">{$office_zg.user_login}</span>
+					<span class="dd-m"> 接单{$office_zg.type}个￥{$office_zg.money}元</span>
+				</div>
+				</volist>
+			</div>
+		</div>
+		<div class="a-right">
+			<div class="right-list-title">
+				<b>|</b>
+				<span class="font">资讯</span>
+			</div>
+			<div class="right-list-c">
+				<foreach name="message_one" item="message_one">
+				<a href="{:U('News/index',array('id'=>$message_one['id']))}"><img src="__TMPL__Public/images/{$message_one.img}" alt="" /></a>
+				<div class="fdc"><span>{:msubstr($message_one['title'],0,14)}</span></div>
+				</foreach>
+				<ul>
+					<volist name="message" id="message">
+					<li><a href="{:U('News/index',array('id'=>$message['id']))}">{:msubstr($message['title'],0,12)}</a><span>{$message.time|date='m-d',###}</span></li>
+					</volist>
+				</ul>
+			</div>	
+		</div>
+	</div>
+<tc_include file="Public:footer" />
+
+</body>
+</html>

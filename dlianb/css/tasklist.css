@@ -1,0 +1,435 @@
+*{
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+}
+/* 订单页面左边开始 */
+#list{
+	/* border: 1px solid red; */
+	height: 100%;
+	width: 1200px;
+	margin: 10px auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+
+}
+#list .list-left{
+	/* border: 1px solid #E8EAEA; */
+	height: 100%;
+	width: 232px;
+	float: left;
+}
+#list .list-left .list-left-one{
+	border: 1px solid #E1E0E2;
+	height:100%;
+	width: 232px;
+	background-color: #EEEEEF;
+	border-bottom: 0px;
+
+}
+#list .list-left .list-left-one h5{
+	background-color: #4A3452;
+	height: 30px;
+	width: 232px;
+	color: #fff;
+	font-weight: 400;	
+}
+#list .list-left .list-left-one h5 b{
+	margin-left: 18px;
+	text-align: center;
+	line-height: 30px;	
+}
+#list .list-left .list-left-one h5 b:before{
+	margin-right: 5px;
+	content: "\25BC";
+}
+#list .list-left .list-left-one ul li {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 28px;
+}
+#list .list-left .list-left-one ul{
+	border-bottom: 1px solid #DBDCDC;
+}
+#list .list-left .list-left-one ul li a{
+	color: #3E3A39;
+	text-decoration: none;
+}
+#list .list-left .list-left-one ul li a:hover{
+	color: #9F7466;
+	text-decoration: none;
+	margin-left: 10px;
+}
+#list .list-left .list-left-one .list-left-back{
+	background-color: #F2F4F4;
+}
+/****************************************************第一块结束*************************************************/
+/****************************************************第二块开始*************************************************/
+#list .list-left .list-left-two{
+	border: 1px solid #E1E0E2;
+	height: 100%;
+	width: 230px;
+	margin-top: 10px;
+	border-bottom: 0px;
+}
+#list .list-left .list-left-two h5{
+	background-color: #EEEEEF;
+	height: 30px;
+	width: 232px;
+	color: #3E3A39;
+	font-weight: 450;
+	line-height: 30px;
+	text-align: left;
+	border-bottom: 1px solid #E1E0E2;
+}
+#list .list-left .list-left-two h5 b{
+	border: 1px solid #4A3452;
+	margin-left: 18px;
+	margin-right: 5px;
+}
+#list .list-left .list-left-two .list-left-user{
+	border-bottom: 1px solid #4A3452;
+	padding-bottom: 10px;
+}
+#list .list-left .list-left-two .list-left-user .list-left-title{
+	margin-left:10px;
+	border: 1px solid #4A3452;
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 10px;
+	color: #3E3A39;
+	padding: 2px 3px 2px 3px;
+}
+#list .list-left .list-left-two .list-left-user .list-left-rmb{
+	color: red;
+	display: inline-block;
+	font-size: 12px;
+}
+#list .list-left .list-left-two .list-left-user .list-left-dw{
+	color: #3E3A39;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+}
+#list .list-left .list-left-two .list-left-user .list-left-name{
+	margin-left: 10px;
+	margin-top: 8px;
+	color: #3E3A39;
+	display: inline-block;
+	font-size: 12px;
+}
+#list .list-left .list-left-two .list-left-user .list-left-time{
+	color: #3E3A39;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 65px;
+}
+/****************************************************第二块结束*************************************************/
+/****************************************************第三块开始*************************************************/
+#list .list-left  .list-left-three{
+	border: 1px solid #E1E0E2;
+	height: 100%;
+	width: 230px;
+	margin-top: 10px;
+	border-bottom: 0px;
+}
+#list .list-left  .list-left-three h5{
+	background-color: #EEEEEF;
+	height: 30px;
+	width: 232px;
+	color: #3E3A39;
+	font-weight: 450;
+	line-height: 30px;
+	text-align: left;
+	border-bottom: 1px solid #E1E0E2;
+}
+#list .list-left  .list-left-three h5 b{
+	border: 1px solid #4A3452;
+	margin-left: 18px;
+	margin-right: 5px;
+}
+#list .list-left  .list-left-three .list-left-user{
+	border-bottom: 1px solid #4A3452;
+	width: 232px;
+	height: 110px;
+}
+#list .list-left  .list-left-three .list-left-user img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 2px;
+}
+#list .list-left  .list-left-three .list-left-user .list-left-title a{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	color:#333;
+	font-size: 13px;
+	width: 150px;
+	text-decoration: none;
+}
+#list .list-left  .list-left-three .list-left-user .list-left-hp{
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	margin-top: 8px;
+	color:#333;
+	font-size: 12px;
+}
+#list .list-left  .list-left-three .list-left-user .list-left-font{
+	font-size: 12px;
+	color: red;
+	float: left;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+#list .list-left  .list-left-three .list-left-user .list-left-color{
+	position: absolute;
+	float: left;
+	font-size: 12px;
+	margin-top: 29px;
+	margin-left: 70px;
+	background-color: #CFCFD1;
+	color:#333;
+
+}
+#list .list-left  .list-left-three .list-left-user .list-left-qy{
+	position: absolute;
+	float: left;
+	font-size: 12px;
+	margin-top: 50px;
+	margin-left: 70px;
+	background-color: #CFCFD1;
+	color: #333;
+
+}
+/****************************************************第三块结束*************************************************/
+/* 订单页面左边结束 */
+/***************************************************************************************************************/
+/* 订单页面右边开始 */
+/* 右则导航开始 */
+#list .list-right{
+	width: 950px;
+	margin-left: 240px;
+}
+#list .list-right .list-right-one{
+	
+	height: 85px;
+}
+#list .list-right .list-right-two{
+	width: 950px;
+	height: 140px;
+}
+#list .list-right .list-right-two .list-right-title{
+	background-color: #EEEEEF;
+	height: 40px;
+	border: 1px solid #E1E0E2;
+	border-bottom: 2px solid #4A3452;
+	border-left:0px;
+	margin-top: 10px; 
+}
+#list .list-right .list-right-two .list-right-title p{
+	font-size: 14px;
+	background-color: #4A3452;
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+
+}
+#list .list-right .list-right-two .list-right-list{
+	width: 950px;
+	border: 1px solid #E1E0E2;
+	background-color:#EEEEEF;
+	border-top: 0px;
+}
+#list .list-right .list-right-two .list-right-list h5{
+	font-size: 15px;
+	margin-left: 15px;
+	display: inline-block;
+	line-height: 36px;
+	text-align: center;
+	margin-right: 15px;
+	color: #3E3A39;
+
+}
+#list .list-right .list-right-two .list-right-list p{
+	font-size: 12px;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+}
+#list .list-right .list-right-two .list-right-list .list-right-check{
+	border:1px solid #4A3452;
+	background-color:#E1E0E2;
+}
+#list .list-right .list-right-two .list-right-list p:hover{
+	border:1px solid #4A3452;
+	background-color:#E1E0E2;
+}
+#list .list-right .list-right-fl p{
+	
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 12px;
+	background-color: #E1E0E2;
+	padding: 0px 3px 0px 3px;
+}
+#list .list-right .list-right-fl .list-right-check{
+	border: 1px solid #4A3452;
+}
+#list .list-right .list-right-fl p:hover{
+	border: 1px solid #4A3452;
+}
+/* 右则导航结束 */
+/* 右则列表开始 */
+#list .list-right .list-right-three{
+	border:1px solid #E1E0E2;
+	height: 100%;
+	border-top:0px;
+	overflow-y: hidden;
+}
+#list .list-right .list-right-three .list-right-cotent{
+	border-bottom: 1px solid #E1E0E2;
+	border-top: 2px solid #4A3452;
+	background-color:#EEEEEF;
+}
+#list .list-right .list-right-three .list-right-cotent p{
+	display: inline-block;
+	line-height: 28px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #353535;
+	margin-top: 3px;
+
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-name{
+	margin-left: 15px;
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-money{
+	margin-left: 260px;
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-class{
+	margin-left: 80px;
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-look{
+	margin-left: 100px;
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-status{
+	margin-left: 100px;
+}
+#list .list-right .list-right-three .list-right-cotent .list-right-collect{
+	margin-left: 80px;
+}
+/* 订单内容部分开始 */
+#list .list-right .list-right-three .list-right-show{
+	border-bottom: 1px solid #E1E0E2;
+	overflow-y: hidden;
+}
+#list .list-right .list-right-three .list-right-show .list-right-mc{
+	display: inline-block;
+	font-size: 12px;
+	width: 275px;
+	margin-left: 15px;
+	line-height: 24px;
+	margin-top: 10px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-mc a{
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+#list .list-right .list-right-three .list-right-show .list-right-mc a:hover{
+	color: #4A3452;
+	margin-left: 5px;
+	border: 1px solid #4A3452;
+}
+#list .list-right .list-right-three .list-right-show .list-right-jg{
+	display: inline-block;
+	line-height: 24px;
+	font-size: 12px;
+	color: #3E3A39;
+	width: 80px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-qymc{
+	display: inline-block;
+	width: 152px;
+	font-size: 12px;
+	line-height: 24px;
+	color: #3E3A39;
+	margin-left: 30px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-dd{
+	display: inline-block;
+	color: #3E3A39;
+	line-height: 24px;
+	font-size: 12px;
+	width: 80px;
+	margin-left: 25px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-type{
+	display: inline-block;
+	font-size: 12px;
+	color: #3E3A39;
+	line-height: 24px;
+	width: 60px;
+	margin-left: 80px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-sc{
+	display: inline-block;
+	margin-left: 53px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-sc img{
+	width: 25px;
+	height: 25px;
+}
+#list .list-right .list-right-three .list-right-show .list-right-cont{
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 15px;
+	position: static;
+	float: left;
+	margin-top: 10px;
+	overflow: hidden;
+	display: none;
+	color: #3E3A39;
+}
+#list .list-right .list-right-three .list-right-show .list-right-fb{
+	display: inline-block;
+	font-size: 14px;
+	margin-left: 650px;
+	background-color: #4A3452;
+	border-radius: 4px;
+	color: #FFF;
+	width: 135px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	display: none;
+	margin-top: 2px;
+}
+/* 分页*/
+#list .list-right  .list-right-page{
+	float: right;
+	margin-top: 20px;
+	margin-right:200px; 
+
+} 
+#list .list-right  .list-right-page ul li{
+	float: left;
+	border: 1px solid #4A3452;
+	font-size: 12px;
+	color: #4A3452;
+	margin: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 5px;	
+}
+/* 分页结束 */
+/* 订单页面右边结束 */

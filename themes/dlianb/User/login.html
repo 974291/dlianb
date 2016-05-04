@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>{$site_seo_title} {$site_name}</title>
+	<meta name="keywords" content="{$site_seo_keywords}" />
+	<meta name="description" content="{$site_seo_description}">
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/login.css" />
+	<script type="text/javascript" src="__TMPL__Public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/layer/layer.js"></script>
+</head>
+<body>
+<!-- 加载通用导航 -->
+<tc_include file="Public:nav" />
+<!-- 中间登陆部分开始 -->
+	<div id="login-form">
+		<div class="login-form-left">
+			<div class="login-form-img"><img src="" alt="" /></div>
+			<div class="login-form-font">
+				<h5>注册用户的特色功能</h5>
+				<b><img src="__TMPL__Public/images/20151010.png" alt=""/>平台全程担保，安心交易</b>
+				<b><img src="__TMPL__Public/images/20151010.png" alt=""/>订单记录保存，随时随地查看</b>	
+				<b><img src="__TMPL__Public/images/20151010.png" alt=""/>定向雇佣下单，战绩保障</b>
+			</div>
+		</div>
+		<div class="login-form-right">
+			<h2>登录</h2><b>游戏玩家们，有中国网游代练吧陪伴!~</b><b class="login-right-dlu">或<a href="{:U('user/register/index')}">注册帐号</a></b>
+			<div class="login-right-fgx"></div>
+			<div class="login-right-box">
+				用户名：<div class="login-right-input"><input type="text"  name="text"/></div>
+				密码：<div class="login-right-input"><input type="password" name="password"/></div>
+				验证码：<div class="login-right-input  code"><input type="text" name="code"/></div>
+				{:sp_verifycode_img('length=4&font_size=14&width=100&height=34&charset=2345678&use_noise=1&use_curve=0')}
+			</div>
+			<div class="login-right-submit">登录</div>
+		</div>
+	</div>
+<!-- 中间登陆部分结束 -->
+<tc_include file="Public:footer" />
+<script>
+	$(function(){
+		$('.login-right-submit').click(function() {
+			var name = $('input[name=text]').val();
+			var password = $('input[name=password]').val();
+			var verify = $('input[name=code]').val();
+			$.ajax({
+				type:"post",
+				url:"{:U('User/login/form')}",
+				async:true,
+				dataTape:"text",
+				data:{name:name,password:password,verify:verify},
+				success:function(data){
+					if (data['info'] === "登陆成功！") {
+						window.location.href="{:U('Index/index/index')}"; 
+					}else {
+						layer.alert(data['info']);
+					}
+				}
+			});
+		});
+	})
+</script>
+</body>
+</html>

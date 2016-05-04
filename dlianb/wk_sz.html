@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中国网游代练吧-我收藏的订单</title>
+		<link rel="stylesheet" href="./css/account.css" />
+		<link rel="stylesheet" href="./css/pubtask.css" />
+		<link href="./editor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+		<link href="./uploadify/uploadify.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/account.js"></script>
+		<script type="text/javascript" src="./editor/third-party/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./editor/umeditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./editor/umeditor.min.js"></script>
+		<script type="text/javascript" src="./editor/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript" src="./uploadify/jquery.uploadify.min.js"></script>
+	</head>
+	<body>
+		<div id="account-right">
+			<div class="account-right-title">
+				<div>我的工作室设置</div>
+			</div>
+			<div class="work-title"> <span>关闭工作室之后您将不再出现在服务商列表，同时您的套餐将全部下架</span></div>
+			<div class="work-type"><span>工作室状态：</span><input type="radio" name="" id="" value=""/>开启<input type="radio" name="" id="" value=""/>关闭</div>
+			<div class="work-name"><span class="work-name-a">工作室名称：</span><div class="work-name-input"><input type="text" name="" id="" /></div></div>
+			<div class="work-col">
+				<span  class="work-qm">个性签名：</span>
+				<textarea name="work-log" maxlength="50" rows="5" class="work-log"></textarea>
+				<span class="help-block">您的工作室广告语直接影响到他人对您的第一印象，请慎重对待。最多50字。</span>
+              		</div>
+			 <div class="pubtask-input-from">
+				 <span class="pubtask-span">工作室头部图片 <b>*</b>&nbsp;:&nbsp;</span>
+				 <div class="pubtask-text"><input type="file" name="uploadify" id="uploadify" /></div>
+				 <span class="pubtask-ts">提示 最佳图片尺寸：1200*280像素</span>
+			 </div>
+			 <div class="submit"><input type="submit" value="提交" /></div>
+		</div>
+	<script type="text/javascript">
+		$(function () {
+			$("#uploadify").uploadify({
+				//指定swf文件
+				'swf': './uploadify/uploadify.swf',
+				//后台处理的页面
+				'uploader': './uploadify/uploadify.php',
+				 'cancelImg': './uploadify/uploadify-cancel.png',
+				//按钮显示的文字
+				'buttonText': '上传图片',
+				//显示的高度和宽度，默认 height 30；width 120
+				//'height': 30,
+				//'width': 80,
+				//上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+				//在浏览窗口底部的文件类型下拉菜单中显示的文本
+				'fileTypeDesc': 'Image Files',
+				//允许上传的文件后缀
+				'fileTypeExts': '*.gif; *.jpg; *.png',
+				//发送给后台的其他参数通过formData指定
+				//'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+				//上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+				//'queueID': 'fileQueue',
+				//选择文件后自动上传
+				'auto': true,
+				//设置为true将允许多文件上传
+				'multi': false
+			});
+		});
+	</script>
+	</body>
+</html>

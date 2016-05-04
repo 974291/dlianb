@@ -1,0 +1,24 @@
+[ 2016-04-19T14:17:25+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1052:Champ: 'id' dans order clause est ambigu
+ [ SQL语句 ] : SELECT * FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  ORDER BY id desc LIMIT 0,15  
+
+[ 2016-04-19T14:22:30+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1051:Table 'b' inconnue
+ [ SQL语句 ] : SELECT b.*,a.* FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  LIMIT 0,15  
+
+[ 2016-04-19T14:28:26+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1054:Champ '__INDENT__.id' inconnu dans order clause
+ [ SQL语句 ] : SELECT * FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  ORDER BY __INDENT__.id desc LIMIT 0,15  
+
+[ 2016-04-19T14:28:50+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1054:Champ '__INDENT__.id' inconnu dans order clause
+ [ SQL语句 ] : SELECT * FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  ORDER BY __INDENT__.id desc LIMIT 0,15  
+
+[ 2016-04-19T14:28:51+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1054:Champ '__INDENT__.id' inconnu dans order clause
+ [ SQL语句 ] : SELECT * FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  ORDER BY __INDENT__.id desc LIMIT 0,15  
+
+[ 2016-04-19T14:31:27+08:00 ] 127.0.0.1 /dlianb/index.php/Tasklist/index.html
+ERR: 1054:Champ '__INDENT__.id' inconnu dans order clause
+ [ SQL语句 ] : SELECT * FROM `dlianb_indent` INNER JOIN dlianb_area ON dlianb_indent.qid = dlianb_area.id  ORDER BY __INDENT__.id desc LIMIT 0,15  
+

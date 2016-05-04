@@ -1,0 +1,129 @@
+*{
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+}
+/* 注册中间部分开始 */
+#reg{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 10px;
+
+}
+#reg .reg-left{
+	height: 550px;
+	width: 590px;
+	position: absolute;
+}
+ .reg-left-img{
+	width: 615px;
+	height: 298px;
+	border-radius: 2px;
+	margin-top: 10px;
+}
+#reg .reg-left .reg-left-font{
+	margin-top: 10px;
+}
+#reg .reg-left .reg-left-font h5{
+	color: #3E3A39;
+	padding-left: 10px;
+}
+#reg .reg-left .reg-left-font b img{
+	height: 12px;
+	width: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#reg .reg-left .reg-left-font b {
+	color: #888;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 5px;
+	line-height: 35px;
+}
+#reg .reg-right{
+	height: 550px;
+	width: 590px;
+	float: right;
+
+}
+#reg .reg-right .reg-right-fgx{
+	border-bottom: 1px solid #eee;
+	width: 550px;
+	margin:  0 auto;
+	margin-top: 10px;
+}
+#reg .reg-right-dlu{
+	margin-left: 130px;
+
+}
+#reg .reg-right-dlu a{
+	color: #4A3452;
+	text-decoration: none;
+	padding-left: 5px;
+}
+#reg .reg-right h2{
+	color: #3E3A39;
+	width: 55px;
+	margin-top: 10px;
+	margin-left: 35px;l
+	float: left;
+	display: inline-block;
+}
+#reg .reg-right b{
+	color: #888;
+	font-size: 12px;
+	font-weight: normal;
+	margin-right:10px; 
+}
+
+#reg .reg-right-box{
+	line-height: 30px;
+	color: #4A3452;
+	margin-left: 45px;
+	margin-top: 15px;
+}
+#reg .reg-right-box .reg-right-input{
+	border: 1px solid #ccc;
+	line-height: 30px;
+	width: 340px;
+	height: 30px;
+	border-radius: 4px;
+}
+#reg .reg-right-box .reg-right-input:hover{
+	border: 1px solid #4A3452;
+	line-height: 30px;
+	width: 340px;
+	height: 30px;
+	border-radius: 4px;
+}
+#reg .reg-right-box .reg-right-input input{
+	border: 0px;
+	line-height: 30px;
+	width: 340px;
+	height: 30px;
+}
+#reg .reg-right-box img{
+	margin-top: 10px;
+	height: 30px;
+	width: 135px;
+}
+#reg .reg-right-box .reg-right-checkbox{
+	margin-top: 10px;
+	font-size: 14px;
+}
+#reg .reg-right-box .reg-right-checkbox a{
+	text-decoration: none;
+}
+#reg .reg-right-submit{
+	background: #4A3452;
+	height: 30px;
+	width: 500px;
+	margin: 15px auto;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px
+}
+
+/* 注册中间部分结束 */
